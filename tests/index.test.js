@@ -29,3 +29,18 @@ describe('Testing random numbers', () => {
     expect(areBetweenOneAndThousand).toBe(true);
   });
 });
+
+
+describe('Testing random boolean values', () => {
+  test('get random boolean', () => {
+    const randomBooleans = [];
+
+    for (let i = 0; i < 1000; i++) {
+      randomBooleans.push(rndjs.getRandomBoolean());
+    }
+
+    const areBooleans = randomBooleans.every(n => typeof n === 'boolean');
+
+    expect(areBooleans).toBe(true);
+  });
+});

@@ -7,7 +7,10 @@ const getRandomBetween = (start, end) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
+const getRandomBoolean = () => !!getRandomBetween(0, 1);
+
 module.exports = {
   getRandomNumber,
-  getRandomBetween
+  getRandomBetween,
+  getRandomBoolean
 };
