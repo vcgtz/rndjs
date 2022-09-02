@@ -1,4 +1,4 @@
-const getRandom = () => Math.random();
+const getRandomNumber = () => Math.random();
 
 const getRandomBetween = (start, end) => {
   const min = Math.ceil(start);
@@ -8,6 +8,6 @@ const getRandomBetween = (start, end) => {
 };
 
 module.exports = {
-  getRandom,
+  getRandomNumber,
   getRandomBetween
 };
