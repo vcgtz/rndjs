@@ -44,3 +44,26 @@ describe('Testing random boolean values', () => {
     expect(areBooleans).toBe(true);
   });
 });
+
+
+describe('Testing random characters or string', () => {
+  test('get random lower case character', () => {
+    const a = 'a'.charCodeAt(0);
+    const z = 'z'.charCodeAt(0);
+
+    const randomChar = rndjs.getRandomChar().charCodeAt(0);
+    const isValid = randomChar >= a && randomChar <= z;
+
+    expect(isValid).toBe(true);
+  });
+
+  test('get random upper case character', () => {
+    const A = 'A'.charCodeAt(0);
+    const Z = 'Z'.charCodeAt(0);
+
+    const randomChar = rndjs.getRandomChar({ upper: true }).charCodeAt(0);
+    const isValid = randomChar >= A && randomChar <= Z;
+
+    expect(isValid).toBe(true);
+  });
+});
