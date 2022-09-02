@@ -1,0 +1,23 @@
+{
+  "name": "rndjs",
+  "version": "0.0.1",
+  "description": "Random values generator",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcgtz/rndjs.git"
+  },
+  "keywords": [
+    "random",
+    "random-values"
+  ],
+  "author": "Vicente Gutiérrez <gtz.rvera@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vcgtz/rndjs/issues"
+  },
+  "homepage": "https://github.com/vcgtz/rndjs#readme"
+}
