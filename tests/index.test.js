@@ -21,7 +21,7 @@ describe('Testing random numbers', () => {
     const randomNumbers = [];
 
     for (let i = 0; i < 1000; i++) {
-      randomNumbers.push(rndjs.getRandomBetween(min, max));
+      randomNumbers.push(rndjs.getRandomNumberBetween(min, max));
     }
 
     const areBetweenOneAndThousand = randomNumbers.every(n => n >= min && n <= max);
