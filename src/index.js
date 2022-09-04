@@ -1,5 +1,6 @@
 const { getLowerCharsArray, getUpperCharsArray } = require('./helpers');
 
+// Numeric functions
 const getRandomNumber = () => Math.random();
 
 const getRandomNumberBetween = (start, end) => {
@@ -9,8 +10,20 @@ const getRandomNumberBetween = (start, end) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
+// Boolean function
 const getRandomBoolean = () => !!getRandomNumberBetween(0, 1);
 
+const flipACoin = () => {
+  const coin = getRandomBoolean();
+
+  if (coin) {
+    return 'tails';
+  }
+
+  return 'heads';
+};
+
+// String functions
 const getRandomLowerChar = () => {
   const chars = getLowerCharsArray();
   const randomIndex = getRandomNumberBetween(0, chars.length - 1);
@@ -34,6 +47,7 @@ const getRandomChar = (options) => {
 };
 
 module.exports = {
+  flipACoin,
   getRandomNumber,
   getRandomNumberBetween,
   getRandomBoolean,

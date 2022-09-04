@@ -48,5 +48,13 @@ rndjs.getRandomChar(); // It returns a char between a-z
 rndjs.getRandomChar({ upper: true }); // It returns a char between A-Z
 ```
 
+### `flipACoin`
+It simulates flip a coin.
+```js
+const rndjs = require('rndjs');
+
+rndjs.flipACoin(); // It returns 'heads' or 'tails'
+```
+
 ## License
 [MIT](https://github.com/vcgtz/rndjs/blob/main/LICENSE)

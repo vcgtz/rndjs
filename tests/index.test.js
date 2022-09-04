@@ -43,6 +43,19 @@ describe('Testing random boolean values', () => {
 
     expect(areBooleans).toBe(true);
   });
+
+  test('flip a coin', () => {
+    const coins = [];
+    const possibleValues = ['heads', 'tails'];
+
+    for (let i = 0; i < 1000; i++) {
+      coins.push(rndjs.flipACoin());
+    }
+
+    const areValidValues = coins.every(n => possibleValues.includes(n));
+
+    expect(areValidValues).toBe(true);
+  });
 });
 
 
