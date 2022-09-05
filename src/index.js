@@ -11,6 +11,8 @@ const getRandomNumberBetween = (start, end) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
+const rollADice = () => getRandomNumberBetween(1, 6);
+
 // Boolean function
 const getRandomBoolean = () => !!getRandomNumberBetween(0, 1);
 
@@ -50,6 +52,7 @@ const getRandomChar = (options) => {
 const getRandomAdjective = () =>
   words[getRandomNumberBetween(0, words.length - 1)];
 
+// Colors functions
 const getRandomRGBColor = () => {
   const r = getRandomNumberBetween(0, 255);
   const g = getRandomNumberBetween(0, 255);
@@ -66,4 +69,5 @@ module.exports = {
   getRandomChar,
   getRandomAdjective,
   getRandomRGBColor,
+  rollADice,
 };

@@ -29,6 +29,18 @@ describe('Testing random numbers', () => {
 
     expect(areBetweenOneAndThousand).toBe(true);
   });
+
+  test('get a random value simulating rolling a dice', () => {
+    const diceResults = [];
+
+    for (let i = 0; i < 1000; i++) {
+      diceResults.push(rndjs.rollADice());
+    }
+
+    const areValidValues = diceResults.every(n => n >= 1 && n <= 6);
+
+    expect(areValidValues).toBe(true);
+  });
 });
 
 
@@ -45,7 +57,7 @@ describe('Testing random boolean values', () => {
     expect(areBooleans).toBe(true);
   });
 
-  test('flip a coin', () => {
+  test('get a random value simulating flipping a coin', () => {
     const coins = [];
     const possibleValues = ['heads', 'tails'];
 

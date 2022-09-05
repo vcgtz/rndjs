@@ -74,5 +74,13 @@ const rndjs = require('rndjs');
 rndjs.flipACoin(); // It returns 'heads' or 'tails'
 ```
 
+### `rollADice`
+It simulates a dice roll.
+```js
+const rndjs = require('rndjs');
+
+rndjs.rollADice(); // It returns a number between 1 and 6
+```
+
 ## License
 [MIT](https://github.com/vcgtz/rndjs/blob/main/LICENSE)
