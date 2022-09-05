@@ -15,7 +15,13 @@
   },
   "keywords": [
     "random",
-    "random-values"
+    "random-values",
+    "generator",
+    "random-words",
+    "words",
+    "colors",
+    "random-colors",
+    "dice"
   ],
   "author": "Vicente Gutiérrez <gtz.rvera@gmail.com>",
   "license": "MIT",
