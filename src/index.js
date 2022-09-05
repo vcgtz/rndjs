@@ -47,7 +47,8 @@ const getRandomChar = (options) => {
   return getRandomLowerChar();
 };
 
-const getRandomAdjective = () => words[getRandomNumberBetween(0, words.length - 1)];
+const getRandomAdjective = () =>
+  words[getRandomNumberBetween(0, words.length - 1)];
 
 module.exports = {
   flipACoin,
