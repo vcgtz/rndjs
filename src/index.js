@@ -1,4 +1,5 @@
 const { getLowerCharsArray, getUpperCharsArray } = require('./helpers');
+const words = require('./constants/adjectives');
 
 // Numeric functions
 const getRandomNumber = () => Math.random();
@@ -46,10 +47,13 @@ const getRandomChar = (options) => {
   return getRandomLowerChar();
 };
 
+const getRandomAdjective = () => words[getRandomNumberBetween(0, words.length - 1)];
+
 module.exports = {
   flipACoin,
   getRandomNumber,
   getRandomNumberBetween,
   getRandomBoolean,
   getRandomChar,
+  getRandomAdjective,
 };

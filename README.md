@@ -48,6 +48,14 @@ rndjs.getRandomChar(); // It returns a char between a-z
 rndjs.getRandomChar({ upper: true }); // It returns a char between A-Z
 ```
 
+### `getRandomAdjective`
+It returns a random adjective.
+```js
+const rndjs = require('rndjs');
+
+rndjs.getRandomAdjective(); // It returns beautiful for example
+```
+
 ### `flipACoin`
 It simulates flip a coin.
 ```js

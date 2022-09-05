@@ -1,4 +1,5 @@
 const rndjs = require('../src/index');
+const words = require('../src/constants/adjectives');
 
 describe('Testing random numbers', () => {
   test('get a random number between 0 and 1', () => {
@@ -78,5 +79,17 @@ describe('Testing random characters or string', () => {
     const isValid = randomChar >= A && randomChar <= Z;
 
     expect(isValid).toBe(true);
+  });
+
+  test('get random word', () => {
+    const randomWords = [];
+
+    for (let i = 0; i < 1000; i++) {
+      randomWords.push(rndjs.getRandomAdjective());
+    }
+
+    const areValidWords = randomWords.every(w => words.includes(w));
+
+    expect(areValidWords).toBe(true);
   });
 });
