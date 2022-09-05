@@ -33,7 +33,7 @@ describe('Testing random numbers', () => {
 
 
 describe('Testing random boolean values', () => {
-  test('get random boolean', () => {
+  test('get a random boolean', () => {
     const randomBooleans = [];
 
     for (let i = 0; i < 1000; i++) {
@@ -61,7 +61,7 @@ describe('Testing random boolean values', () => {
 
 
 describe('Testing random characters or string', () => {
-  test('get random lower case character', () => {
+  test('get a random lower case character', () => {
     const a = 'a'.charCodeAt(0);
     const z = 'z'.charCodeAt(0);
 
@@ -71,7 +71,7 @@ describe('Testing random characters or string', () => {
     expect(isValid).toBe(true);
   });
 
-  test('get random upper case character', () => {
+  test('get a random upper case character', () => {
     const A = 'A'.charCodeAt(0);
     const Z = 'Z'.charCodeAt(0);
 
@@ -81,7 +81,7 @@ describe('Testing random characters or string', () => {
     expect(isValid).toBe(true);
   });
 
-  test('get random word', () => {
+  test('get a random word', () => {
     const randomWords = [];
 
     for (let i = 0; i < 1000; i++) {
