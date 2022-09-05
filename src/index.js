@@ -50,6 +50,14 @@ const getRandomChar = (options) => {
 const getRandomAdjective = () =>
   words[getRandomNumberBetween(0, words.length - 1)];
 
+const getRandomRGBColor = () => {
+  const r = getRandomNumberBetween(0, 255);
+  const g = getRandomNumberBetween(0, 255);
+  const b = getRandomNumberBetween(0, 255);
+
+  return {r, g, b};
+}
+
 module.exports = {
   flipACoin,
   getRandomNumber,
@@ -57,4 +65,5 @@ module.exports = {
   getRandomBoolean,
   getRandomChar,
   getRandomAdjective,
+  getRandomRGBColor,
 };
