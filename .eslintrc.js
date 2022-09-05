@@ -17,5 +17,6 @@ module.exports = {
   },
   rules: {
     'no-plusplus': 0,
+    'no-prototype-builtins': 0,
   },
 };

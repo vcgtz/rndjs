@@ -93,3 +93,22 @@ describe('Testing random characters or string', () => {
     expect(areValidWords).toBe(true);
   });
 });
+
+describe('Testing random colors', () => {
+  test('check a random rgb object with the correct properties', () => {
+    const rgb = rndjs.getRandomRGBColor();
+
+    expect(Object.keys(rgb).length).toBe(3);
+    expect(rgb.hasOwnProperty('r'));
+    expect(rgb.hasOwnProperty('g'));
+    expect(rgb.hasOwnProperty('b'));
+  });
+
+  test('get a random and valid rgb object', () => {
+    const rgb = rndjs.getRandomRGBColor();
+
+    expect(rgb.r >= 0 && rgb.r <= 255).toBe(true);
+    expect(rgb.g >= 0 && rgb.r <= 255).toBe(true);
+    expect(rgb.b >= 0 && rgb.r <= 255).toBe(true);
+  });
+});

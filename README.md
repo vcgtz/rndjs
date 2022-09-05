@@ -58,6 +58,14 @@ const rndjs = require('rndjs');
 rndjs.getRandomAdjective(); // It returns beautiful for example
 ```
 
+### `getRandomRGBColor`
+It returns a random RGB color object. The object has the format `{ r: <number>, g: <number>, b: <number> }`
+```js
+const rndjs = require('rndjs');
+
+rndjs.getRandomRGBColor(); // It returns an object like {r: 19, g: 110, b: 166}
+```
+
 ### `flipACoin`
 It simulates flip a coin.
 ```js
