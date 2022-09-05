@@ -58,8 +58,8 @@ const getRandomRGBColor = () => {
   const g = getRandomNumberBetween(0, 255);
   const b = getRandomNumberBetween(0, 255);
 
-  return {r, g, b};
-}
+  return { r, g, b };
+};
 
 module.exports = {
   flipACoin,

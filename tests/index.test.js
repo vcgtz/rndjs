@@ -117,10 +117,18 @@ describe('Testing random colors', () => {
   });
 
   test('get a random and valid rgb object', () => {
-    const rgb = rndjs.getRandomRGBColor();
+    const rgbColors = [];
 
-    expect(rgb.r >= 0 && rgb.r <= 255).toBe(true);
-    expect(rgb.g >= 0 && rgb.r <= 255).toBe(true);
-    expect(rgb.b >= 0 && rgb.r <= 255).toBe(true);
+    for (let i = 0; i < 1000; i++) {
+      rgbColors.push(rndjs.getRandomRGBColor());
+    }
+
+    const areValidColors = rgbColors.every(c => (
+        (c.r >= 0 && c.r <= 255) &&
+        (c.g >= 0 && c.g <= 255) &&
+        (c.b >= 0 && c.b <= 255)
+    ));
+
+    expect(areValidColors).toBe(true);
   });
 });
