@@ -1,7 +1,8 @@
 # rndjs
 Minimal library to generate random values.
 
-[![npm version](https://badge.fury.io/js/rndjs.svg)](//npmjs.com/package/rndjs)
+![npm](https://img.shields.io/npm/l/rndjs?color=blue)
+![npm](https://img.shields.io/npm/v/rndjs)
 
 ## Installation
 This module is available through [NPM](https://www.npmjs.com/).
