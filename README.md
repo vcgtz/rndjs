@@ -3,6 +3,7 @@ Minimal library to generate random values.
 
 ![npm](https://img.shields.io/npm/l/rndjs?color=blue)
 ![npm](https://img.shields.io/npm/v/rndjs)
+![github actions](https://github.com/vcgtz/rndjs/actions/workflows/node.js.yml/badge.svg)
 
 ## Installation
 This module is available through [NPM](https://www.npmjs.com/).
