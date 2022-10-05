@@ -2,8 +2,8 @@
   "name": "rndjs",
   "version": "1.2.1",
   "description": "Random values generator",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "format": "prettier --write 'src/**/*.js'",
     "format:check": "prettier --check 'src/**/*.js'",
@@ -23,7 +23,9 @@
     "words",
     "colors",
     "random-colors",
-    "dice"
+    "dice",
+    "nodejs",
+    "typescript"
   ],
   "author": "Vicente Gutiérrez <gtz.rvera@gmail.com>",
   "license": "MIT",
