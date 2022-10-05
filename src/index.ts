@@ -1,22 +1,13 @@
 import { getLowerCharsArray, getUpperCharsArray } from './helpers';
 import adjectives from './constants/adjectives';
-
-type RandomCharOptions = {
-  upper?: boolean;
-};
-
-type RGB = {
-  r: number;
-  g: number;
-  b: number;
-};
+import { RandomCharOptions, RGB } from './types';
 
 // Numeric functions
 export const getRandomNumber = (): number => Math.random();
 
 export const getRandomNumberBetween = (start: number, end: number): number => {
-  const min = Math.ceil(start);
-  const max = Math.floor(end);
+  const min: number = Math.ceil(start);
+  const max: number = Math.floor(end);
 
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
@@ -27,7 +18,7 @@ export const rollADice = (): number => getRandomNumberBetween(1, 6);
 export const getRandomBoolean = (): boolean => !!getRandomNumberBetween(0, 1);
 
 export const flipACoin = (): string => {
-  const coin = getRandomBoolean();
+  const coin: boolean = getRandomBoolean();
 
   if (coin) {
     return 'tails';
@@ -38,15 +29,15 @@ export const flipACoin = (): string => {
 
 // String functions
 const getRandomLowerChar = (): string => {
-  const chars = getLowerCharsArray();
-  const randomIndex = getRandomNumberBetween(0, chars.length - 1);
+  const chars: string[] = getLowerCharsArray();
+  const randomIndex: number = getRandomNumberBetween(0, chars.length - 1);
 
   return chars[randomIndex];
 };
 
 const getRandomUpperChar = (): string => {
-  const chars = getUpperCharsArray();
-  const randomIndex = getRandomNumberBetween(0, chars.length - 1);
+  const chars: string[] = getUpperCharsArray();
+  const randomIndex: number = getRandomNumberBetween(0, chars.length - 1);
 
   return chars[randomIndex];
 };
@@ -64,9 +55,9 @@ export const getRandomAdjective = (): string =>
 
 // Colors functions
 export const getRandomRGBColor = (): RGB => {
-  const r = getRandomNumberBetween(0, 255);
-  const g = getRandomNumberBetween(0, 255);
-  const b = getRandomNumberBetween(0, 255);
+  const r: number = getRandomNumberBetween(0, 255);
+  const g: number = getRandomNumberBetween(0, 255);
+  const b: number = getRandomNumberBetween(0, 255);
 
   return { r, g, b };
 };
