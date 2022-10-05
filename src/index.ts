@@ -2,13 +2,13 @@ import { getLowerCharsArray, getUpperCharsArray } from './helpers';
 import adjectives from './constants/adjectives';
 
 type RandomCharOptions = {
-  upper?: boolean,
+  upper?: boolean;
 };
 
 type RGB = {
-  r: number,
-  g: number,
-  b: number,
+  r: number;
+  g: number;
+  b: number;
 };
 
 // Numeric functions
