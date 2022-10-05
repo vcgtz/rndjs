@@ -1,4 +1,5 @@
-const helpers = require('../src/helpers');
+import { describe, test, expect } from '@jest/globals'
+import * as helpers from '../src/helpers';
 
 describe('Testing helper functions', () => {
   test('get array from range 0 to 10', () => {

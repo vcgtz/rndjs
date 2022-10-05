@@ -1,5 +1,6 @@
-const rndjs = require('../src/index');
-const words = require('../src/constants/adjectives');
+import { describe, test, expect } from '@jest/globals'
+import * as rndjs from '../src/index';
+import adjectives from '../src/constants/adjectives';
 
 describe('Testing random numbers', () => {
   test('get a random number between 0 and 1', () => {
@@ -100,7 +101,7 @@ describe('Testing random characters or string', () => {
       randomWords.push(rndjs.getRandomAdjective());
     }
 
-    const areValidWords = randomWords.every(w => words.includes(w));
+    const areValidWords = randomWords.every(w => adjectives.includes(w));
 
     expect(areValidWords).toBe(true);
   });

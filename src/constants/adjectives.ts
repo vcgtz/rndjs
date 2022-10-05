@@ -1,4 +1,4 @@
-module.exports = [
+const randomAdjectives: string[] = [
   'acidic',
   'aggressive',
   'agreeable',
@@ -196,3 +196,5 @@ module.exports = [
   'yummy',
   'zealous',
 ];
+
+export default randomAdjectives;
