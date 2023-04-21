@@ -1,6 +1,6 @@
 {
   "name": "rndjs",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Random values generator",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
